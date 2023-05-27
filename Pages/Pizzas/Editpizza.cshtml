@@ -1,0 +1,35 @@
+﻿@page
+@model Pizza_StoreV3.EditpizzaModel
+@{
+}
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="@Model.pizza.Id" class="control-label"></label>
+        <input asp-for="@Model.pizza.Id" class="form-control" />
+        <span asp-validation-for="@Model.pizza.Id" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.pizza.Name" class="control-label"></label>
+        <input asp-for="@Model.pizza.Name" class="form-control" />
+        <span asp-validation-for="@Model.pizza.Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.pizza.Description" class="control-label"></label>
+        <input asp-for="@Model.pizza.Description" class="form-control" />
+        <span asp-validation-for="@Model.pizza.Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.pizza.Price" class="control-label"></label>
+        <input asp-for="@Model.pizza.Price" class="form-control" />
+        <span asp-validation-for="@Model.pizza.Price" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.pizza.ImageName" class="control-label"></label>
+        <input asp-for="@Model.pizza.ImageName" class="form-control" />
+        <span asp-validation-for="@Model.pizza.ImageName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Update" class="btn btn-primary" />
+    </div>
+</form>
